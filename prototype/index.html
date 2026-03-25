@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySubaru — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <span>9:41</span>
+    <span>&#9679;&#9679;&#9679; &#9681;</span>
+  </div>
+
+  <!-- Nav Bar -->
+  <div class="nav-bar">
+    <span></span>
+    <div class="nav-logo">
+      <span class="logo-icon">(</span>MySubaru
+    </div>
+    <button class="menu-btn" onclick="openMenu()">Menu</button>
+  </div>
+
+  <!-- Context Banner -->
+  <div class="context-banner">
+    <span>My First Subaru</span>
+    <div class="info-icon">i</div>
+  </div>
+
+  <!-- Quick Actions -->
+  <div class="quick-actions" style="margin-top: 24px;">
+    <a class="quick-action" href="pages/settings-menu.html">
+      <div class="qa-icon">&#9881;</div>
+      <div class="qa-label">View Start<br>Settings</div>
+    </a>
+    <a class="quick-action primary" href="#">
+      <div class="qa-icon">&#9211;</div>
+      <div class="qa-label">Quick Start</div>
+    </a>
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#9729;</div>
+      <div class="qa-label">Climate<br>Presets</div>
+    </a>
+  </div>
+
+  <div class="quick-actions">
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#128274;</div>
+      <div class="qa-label">Lock</div>
+    </a>
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#128275;</div>
+      <div class="qa-label">Unlock</div>
+    </a>
+    <a class="quick-action" href="#">
+      <div class="qa-icon" style="opacity:0"></div>
+      <div class="qa-label" style="opacity:0">-</div>
+    </a>
+  </div>
+
+  <div class="quick-actions">
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#128205;</div>
+      <div class="qa-label">Locate Vehicle</div>
+    </a>
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#128226;</div>
+      <div class="qa-label">Horn &amp; Lights</div>
+    </a>
+    <a class="quick-action" href="#">
+      <div class="qa-icon">&#128663;</div>
+      <div class="qa-label">MyTrips</div>
+    </a>
+  </div>
+
+  <!-- Tab Bar -->
+  <div class="tab-bar">
+    <a class="tab-item active" href="index.html">
+      <div class="tab-icon">&#128663;</div>
+      <span>Vehicle Status</span>
+    </a>
+    <a class="tab-item" href="#">
+      <div class="tab-icon">&#127873;</div>
+      <span>Offers &amp; Events</span>
+    </a>
+    <a class="tab-item" href="pages/family-account.html">
+      <div class="tab-icon">&#128101;</div>
+      <span>Set Driver Alerts</span>
+    </a>
+  </div>
+
+  <!-- Slide-out Menu -->
+  <div class="menu-overlay" onclick="closeMenu()"></div>
+  <div class="slide-menu">
+    <div style="padding: 60px 20px 20px;">
+      <h2 style="margin-bottom: 24px;">Driver Alerts</h2>
+      <a class="list-row" href="pages/boundary-alerts.html">
+        <div class="row-left">
+          <span class="row-icon">&#127758;</span>
+          <span class="row-label">Boundary Alerts</span>
+        </div>
+        <span class="chevron">&#8250;</span>
+      </a>
+      <a class="list-row" href="pages/speed-alerts.html">
+        <div class="row-left">
+          <span class="row-icon">&#9201;</span>
+          <span class="row-label">Speed Alerts</span>
+        </div>
+        <span class="chevron">&#8250;</span>
+      </a>
+      <a class="list-row" href="pages/curfew-alerts.html">
+        <div class="row-left">
+          <span class="row-icon">&#128336;</span>
+          <span class="row-label">Curfew Alerts</span>
+        </div>
+        <span class="chevron">&#8250;</span>
+      </a>
+      <a class="list-row" href="#">
+        <div class="row-left">
+          <span class="row-icon">&#128664;</span>
+          <span class="row-label">Valet Mode</span>
+        </div>
+        <span class="chevron">&#8250;</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

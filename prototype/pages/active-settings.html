@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySubaru — Teen Driver Active Settings</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
+
+  <div class="nav-bar">
+    <button class="back-btn" onclick="goBack()">&#8249;</button>
+    <div class="nav-logo"><span class="logo-icon">(</span>MySubaru</div>
+    <button class="menu-btn" onclick="openMenu()">Menu</button>
+  </div>
+
+  <div class="context-banner">
+    <span>Kevin Bryant &mdash; Teen Driver</span>
+    <div class="info-icon">i</div>
+  </div>
+
+  <!-- Driver Profile -->
+  <div style="padding: 20px 16px; display: flex; align-items: center; gap: 12px;">
+    <div class="avatar">K</div>
+    <div style="flex: 1;">
+      <div style="font-weight: 600; font-size: 17px;">Kevin Bryant</div>
+      <div style="font-size: 13px; color: var(--gray-500);">Age 16 &middot; High Trust Level &middot; Active</div>
+    </div>
+    <div style="width: 10px; height: 10px; background: var(--green-active); border-radius: 50%;"></div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-value">87</div>
+      <div class="stat-label">Weekly Score</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" style="color: var(--black);">0</div>
+      <div class="stat-label">Alerts</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" style="color: var(--black);">108</div>
+      <div class="stat-label">Mi This Week</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" style="color: var(--black);">5</div>
+      <div class="stat-label">Active Rules</div>
+    </div>
+  </div>
+
+  <!-- Active Rules -->
+  <div class="section-header">Active Rules</div>
+
+  <a class="list-row" href="speed-alerts.html">
+    <div class="row-left">
+      <span class="row-icon">&#9201;</span>
+      <div>
+        <div class="row-label">Speed Cap: 85 MPH</div>
+        <div class="row-sublabel">Alert after 60 sec</div>
+      </div>
+    </div>
+    <div class="row-right">
+      <span class="badge-on">ON</span>
+      <span class="chevron">&#8250;</span>
+    </div>
+  </a>
+
+  <a class="list-row" href="curfew-alerts.html">
+    <div class="row-left">
+      <span class="row-icon">&#128336;</span>
+      <div>
+        <div class="row-label">Curfew: 11pm–6am</div>
+        <div class="row-sublabel">Mon – Sun</div>
+      </div>
+    </div>
+    <div class="row-right">
+      <span class="badge-on">ON</span>
+      <span class="chevron">&#8250;</span>
+    </div>
+  </a>
+
+  <a class="list-row" href="passenger-limit.html">
+    <div class="row-left">
+      <span class="row-icon">&#128101;</span>
+      <div>
+        <div class="row-label">Passenger Limit: Max 2</div>
+        <div class="row-sublabel">Alert after 60 sec</div>
+      </div>
+    </div>
+    <div class="row-right">
+      <span class="badge-on">ON</span>
+      <span class="chevron">&#8250;</span>
+    </div>
+  </a>
+
+  <a class="list-row" href="volume-limits.html">
+    <div class="row-left">
+      <span class="row-icon">&#128264;</span>
+      <div>
+        <div class="row-label">Volume Cap: 70%</div>
+        <div class="row-sublabel">In motion &middot; Locked</div>
+      </div>
+    </div>
+    <div class="row-right">
+      <span class="badge-on">ON</span>
+      <span class="chevron">&#8250;</span>
+    </div>
+  </a>
+
+  <a class="list-row" href="low-fuel-alerts.html">
+    <div class="row-left">
+      <span class="row-icon">&#9981;</span>
+      <div>
+        <div class="row-label">Low Fuel Alert: 20%</div>
+        <div class="row-sublabel">Guardian + Teen notified</div>
+      </div>
+    </div>
+    <div class="row-right">
+      <span class="badge-on">ON</span>
+      <span class="chevron">&#8250;</span>
+    </div>
+  </a>
+
+  <!-- Quick Actions -->
+  <div class="section-header">Quick Actions</div>
+
+  <a class="list-row" href="settings-menu.html">
+    <div class="row-left"><span class="row-label">Teen Driver Settings</span></div>
+    <span class="chevron">&#8250;</span>
+  </a>
+  <a class="list-row" href="reports.html">
+    <div class="row-left"><span class="row-label">View Reports</span></div>
+    <span class="chevron">&#8250;</span>
+  </a>
+  <a class="list-row" href="transparency-ledger.html">
+    <div class="row-left"><span class="row-label">Transparency Ledger</span></div>
+    <span class="chevron">&#8250;</span>
+  </a>
+
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>
