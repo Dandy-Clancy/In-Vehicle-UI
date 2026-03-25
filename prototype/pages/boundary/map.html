@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
+  <title>MySubaru — Boundary Map</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<div class="frame">
+
+  <div class="sb">
+    <span class="t">9:41</span>
+    <span class="i"><svg viewBox="0 0 17 12"><rect x="0" y="3" width="3" height="9" rx=".5" fill="currentColor" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx=".5" fill="currentColor" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx=".5" fill="currentColor" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx=".5" fill="currentColor"/></svg><svg viewBox="0 0 16 12"><path d="M8 2.4C5.6 2.4 3.4 3.4 1.8 5.1L0 3.3C2.1 1.2 4.9 0 8 0s5.9 1.2 8 3.3l-1.8 1.8C12.6 3.4 10.4 2.4 8 2.4z" fill="currentColor"/><circle cx="8" cy="11" r="2" fill="currentColor"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="21" height="10" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><rect x="22" y="4" width="2" height="4" rx=".5" fill="currentColor" opacity=".4"/><rect x="1.5" y="2.5" width="18" height="7" rx="1" fill="currentColor"/></svg></span>
+  </div>
+
+  <div class="nb">
+    <button class="nb-back" onclick="back()"><span class="arr">&#8249;</span> Back</button>
+    <span class="nb-center">Set Boundary</span>
+    <button class="nb-menu" onclick="openMenu()">Menu</button>
+  </div>
+
+  <div class="map">
+    <div class="map-c">
+      <div class="map-d"></div>
+    </div>
+    <div class="map-a">1566 Pearson St, Ferndale, MI 48220</div>
+  </div>
+
+  <div class="ct" style="padding-bottom:80px">
+
+    <div class="fi" style="margin:16px;display:flex;align-items:center;gap:8px">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <span style="color:#999">Search address...</span>
+    </div>
+
+    <div style="display:flex;gap:10px;padding:0 16px;margin-bottom:16px">
+      <button class="btn btn-b" style="flex:1;padding:8px">Circle</button>
+      <button class="btn btn-o" style="flex:1;padding:8px">Square</button>
+    </div>
+
+    <div class="sl-w" style="padding:0 16px">
+      <div class="fl">Radius</div>
+      <input class="ri" type="range" min="0.1" max="2" step="0.1" value="0.2">
+      <div class="sl-lb">
+        <span>0.1 mi</span>
+        <span style="font-weight:600;color:var(--blue)">0.2 mi</span>
+        <span>2.0 mi</span>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:10px;padding:20px 16px">
+      <button class="btn btn-o" style="flex:1" onclick="back()">Cancel</button>
+      <button class="btn btn-b" style="flex:1" onclick="nav('name-timing.html')">Next</button>
+    </div>
+
+  </div>
+
+</div>
+<script src="../../js/app.js"></script>
+</body>
+</html>
