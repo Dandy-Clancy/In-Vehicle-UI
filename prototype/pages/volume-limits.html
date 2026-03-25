@@ -2,78 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
   <title>MySubaru — Volume Limiting</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<div class="app-shell">
-
-  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
+<div class="device-frame">
+  <div class="ios-status-bar"><span class="time">9:41</span><span class="icons"><svg viewBox="0 0 17 12"><rect x="0" y="3" width="3" height="9" rx=".5" fill="#000" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx=".5" fill="#000" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx=".5" fill="#000" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx=".5" fill="#000"/></svg><svg viewBox="0 0 16 12"><path d="M8 2.4C5.6 2.4 3.4 3.4 1.8 5.1L0 3.3C2.1 1.2 4.9 0 8 0s5.9 1.2 8 3.3l-1.8 1.8C12.6 3.4 10.4 2.4 8 2.4z" fill="#000"/><circle cx="8" cy="11" r="2" fill="#000"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="21" height="10" rx="2" stroke="#000" stroke-width="1" fill="none"/><rect x="22" y="4" width="2" height="4" rx=".5" fill="#000" opacity=".4"/><rect x="1.5" y="2.5" width="18" height="7" rx="1" fill="#000"/></svg></span></div>
 
   <div class="nav-bar">
-    <button class="back-btn" onclick="goBack()">&#8249;</button>
-    <span class="nav-title">Volume Limiting</span>
-    <button class="menu-btn" onclick="openMenu()">Menu</button>
+    <button class="nav-back" onclick="goBack()"><span class="arrow">&#8249;</span></button>
+    <span class="nav-center">Volume Limiting</span>
+    <button class="nav-menu">Menu</button>
   </div>
 
-  <div class="context-banner">
-    <span>Kevin Bryant &mdash; Teen Driver</span>
-    <div class="info-icon">i</div>
-  </div>
+  <div class="ctx-banner"><span>Kevin Bryant &mdash; Teen Driver</span><div class="info-btn">i</div></div>
 
-  <h2 style="text-align: center; padding: 20px 16px 8px; font-size: 22px;">Volume Limiting</h2>
+  <div class="content">
+    <div class="page-title">Volume Limiting</div>
 
-  <!-- Maximum Volume -->
-  <div class="section-header">Maximum Volume</div>
-  <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 16px;">
-    <span style="font-size: 17px;">Max Volume</span>
-    <span id="vol-display" style="font-size: 24px; font-weight: 700; color: var(--blue-primary);">70%</span>
-  </div>
-  <div style="padding: 0 16px 8px;">
-    <input type="range" class="range-slider" min="0" max="100" value="70" style="background: linear-gradient(to right, var(--blue-primary) 70%, var(--gray-200) 70%);"
-           oninput="document.getElementById('vol-display').textContent = this.value + '%'; this.style.background = 'linear-gradient(to right, var(--blue-primary) ' + this.value + '%, var(--gray-200) ' + this.value + '%)'">
-    <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--gray-500); margin-top: 4px;">
-      <span>0%</span><span>50%</span><span>100%</span>
+    <div class="sec-hdr">Maximum Volume</div>
+    <div class="flex-between px" style="padding-top:8px;">
+      <span style="font-size:17px;">Max Volume</span>
+      <span id="vol-display" style="font-size:24px;font-weight:700;color:var(--blue);">70%</span>
     </div>
-  </div>
-
-  <div class="list-row">
-    <div class="row-left">
-      <div>
-        <div class="row-label">Lock Volume While in Motion</div>
-        <div class="row-sublabel">Teen cannot adjust above cap while driving</div>
-      </div>
+    <div class="slider-wrap">
+      <input type="range" class="range-input" min="0" max="100" value="70" oninput="document.getElementById('vol-display').textContent=this.value+'%'">
+      <div class="slider-labels"><span>0%</span><span>50%</span><span>100%</span></div>
     </div>
-    <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
+
+    <div class="row">
+      <div class="row-left"><div class="row-text"><div class="row-label">Lock Volume While in Motion</div><div class="row-sub">Teen cannot adjust above cap while driving</div></div></div>
+      <label class="toggle"><input type="checkbox" checked><span class="toggle-track"></span></label>
+    </div>
+
+    <div class="sec-hdr">Apply To</div>
+    <div class="row"><div class="row-left"><span class="row-label">All Audio Sources</span></div><label class="toggle"><input type="checkbox" checked><span class="toggle-track"></span></label></div>
+    <div class="row"><div class="row-left"><span class="row-label">Phone Calls Only</span></div><label class="toggle"><input type="checkbox"><span class="toggle-track"></span></label></div>
+
+    <div class="sec-hdr">Notifications</div>
+    <div class="row" style="border-bottom:none;"><div class="row-left"><span class="row-label">Notify Guardian if Adjusted</span></div><label class="toggle"><input type="checkbox" checked><span class="toggle-track"></span></label></div>
+
+    <div style="padding:24px 16px 8px;"><button class="btn btn-blue" onclick="saveSetting('Volume Limiting')">Save Setting</button></div>
+    <div style="padding:0 16px 24px;"><button class="btn btn-text" onclick="goBack()">Cancel</button></div>
   </div>
 
-  <!-- Apply To -->
-  <div class="section-header">Apply To</div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">All Audio Sources</span></div>
-    <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
-  </div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Phone Calls Only</span></div>
-    <label class="toggle"><input type="checkbox"><span class="slider"></span></label>
-  </div>
-
-  <!-- Notifications -->
-  <div class="section-header">Notifications</div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Notify Guardian if Adjusted</span></div>
-    <label class="toggle"><input type="checkbox" checked><span class="slider"></span></label>
-  </div>
-
-  <!-- Actions -->
-  <div style="padding: 24px 16px 8px;">
-    <button class="btn-primary" onclick="saveSetting('Volume Limiting')">Save Setting</button>
-  </div>
-  <div style="padding: 0 16px 24px;">
-    <button class="btn-cancel" onclick="goBack()">Cancel</button>
-  </div>
-
+  <div class="notif-toast"><div class="notif-app">MYSUBARU</div><div class="notif-title"></div><div class="notif-body"></div></div>
 </div>
 <script src="../js/app.js"></script>
 </body>

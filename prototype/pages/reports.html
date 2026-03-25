@@ -2,98 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
   <title>MySubaru — Teen Driver Reports</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<div class="app-shell">
-
-  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
+<div class="device-frame">
+  <div class="ios-status-bar"><span class="time">9:41</span><span class="icons"><svg viewBox="0 0 17 12"><rect x="0" y="3" width="3" height="9" rx=".5" fill="#000" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx=".5" fill="#000" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx=".5" fill="#000" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx=".5" fill="#000"/></svg><svg viewBox="0 0 16 12"><path d="M8 2.4C5.6 2.4 3.4 3.4 1.8 5.1L0 3.3C2.1 1.2 4.9 0 8 0s5.9 1.2 8 3.3l-1.8 1.8C12.6 3.4 10.4 2.4 8 2.4z" fill="#000"/><circle cx="8" cy="11" r="2" fill="#000"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="21" height="10" rx="2" stroke="#000" stroke-width="1" fill="none"/><rect x="22" y="4" width="2" height="4" rx=".5" fill="#000" opacity=".4"/><rect x="1.5" y="2.5" width="18" height="7" rx="1" fill="#000"/></svg></span></div>
 
   <div class="nav-bar">
-    <button class="back-btn" onclick="goBack()">&#8249;</button>
-    <span class="nav-title">Teen Driver Reports</span>
-    <button class="menu-btn" onclick="openMenu()">Menu</button>
+    <button class="nav-back" onclick="goBack()"><span class="arrow">&#8249;</span></button>
+    <span class="nav-center">Teen Driver Reports</span>
+    <button class="nav-menu">Menu</button>
   </div>
 
-  <div class="context-banner">
-    <span>Kevin Bryant &mdash; Teen Driver</span>
-    <div class="info-icon">i</div>
-  </div>
+  <div class="ctx-banner"><span>Kevin Bryant &mdash; Teen Driver</span><div class="info-btn">i</div></div>
 
-  <!-- Score Card -->
-  <div class="score-card">
-    <div class="week-label">Week of Mar 10–16, 2026</div>
-    <div class="score-value">87</div>
-    <div class="score-delta">&#8593; +5 pts from last week</div>
-    <div class="score-stats">
-      <div>
-        <div class="score-stat-value">16</div>
-        <div class="score-stat-label">Trips</div>
-      </div>
-      <div>
-        <div class="score-stat-value">108</div>
-        <div class="score-stat-label">Miles</div>
-      </div>
-      <div>
-        <div class="score-stat-value">0</div>
-        <div class="score-stat-label">Alerts</div>
-      </div>
-      <div>
-        <div class="score-stat-value">6h 22m</div>
-        <div class="score-stat-label">Drive Time</div>
+  <div class="content">
+    <div class="score-card">
+      <div class="score-week">Week of Mar 10–16, 2026</div>
+      <div class="score-big">87</div>
+      <div class="score-delta">&#8593; +5 pts from last week</div>
+      <div class="score-footer">
+        <div><div class="sf-val">16</div><div class="sf-lbl">Trips</div></div>
+        <div><div class="sf-val">108</div><div class="sf-lbl">Miles</div></div>
+        <div><div class="sf-val">0</div><div class="sf-lbl">Alerts</div></div>
+        <div><div class="sf-val">6h 22m</div><div class="sf-lbl">Drive Time</div></div>
       </div>
     </div>
+
+    <div class="sec-hdr">Score Breakdown</div>
+    <div class="prog-row"><span class="prog-label">Speed Compliance</span><div class="prog-track"><div class="prog-fill" style="width:91%"></div></div><span class="prog-val">91</span></div>
+    <div class="prog-row"><span class="prog-label">Smooth Driving</span><div class="prog-track"><div class="prog-fill" style="width:92%"></div></div><span class="prog-val">92</span></div>
+    <div class="prog-row"><span class="prog-label">Distraction-Free</span><div class="prog-track"><div class="prog-fill" style="width:100%"></div></div><span class="prog-val">100</span></div>
+    <div class="prog-row"><span class="prog-label">Hard Braking</span><div class="prog-track"><div class="prog-fill" style="width:100%"></div></div><span class="prog-val">100</span></div>
+
+    <div class="sec-hdr">Alerts This Week</div>
+    <div class="row"><div class="row-left"><span class="row-label">Speed</span></div><span style="font-weight:600;color:var(--green);">0</span></div>
+    <div class="row"><div class="row-left"><span class="row-label">Curfew</span></div><span style="font-weight:600;color:var(--green);">0</span></div>
+    <div class="row"><div class="row-left"><span class="row-label">Boundary</span></div><span style="font-weight:600;color:var(--green);">0</span></div>
+    <div class="row" style="border-bottom:none;"><div class="row-left"><span class="row-label">Passenger</span></div><span style="font-weight:600;color:var(--green);">0</span></div>
+
+    <div style="padding:20px 16px;"><a class="btn btn-outline" href="#">View Full History</a></div>
   </div>
 
-  <!-- Score Breakdown -->
-  <div class="section-header">Score Breakdown</div>
-  <div class="progress-row">
-    <span class="progress-label">Speed Compliance</span>
-    <div class="progress-bar"><div class="fill" style="width: 91%;"></div></div>
-    <span class="progress-value">91</span>
-  </div>
-  <div class="progress-row">
-    <span class="progress-label">Smooth Driving</span>
-    <div class="progress-bar"><div class="fill" style="width: 92%;"></div></div>
-    <span class="progress-value">92</span>
-  </div>
-  <div class="progress-row">
-    <span class="progress-label">Distraction-Free</span>
-    <div class="progress-bar"><div class="fill" style="width: 100%;"></div></div>
-    <span class="progress-value">100</span>
-  </div>
-  <div class="progress-row">
-    <span class="progress-label">Hard Braking</span>
-    <div class="progress-bar"><div class="fill" style="width: 100%;"></div></div>
-    <span class="progress-value">100</span>
-  </div>
-
-  <!-- Alerts This Week -->
-  <div class="section-header">Alerts This Week</div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Speed</span></div>
-    <span style="font-weight: 600; color: var(--green-score);">0</span>
-  </div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Curfew</span></div>
-    <span style="font-weight: 600; color: var(--green-score);">0</span>
-  </div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Boundary</span></div>
-    <span style="font-weight: 600; color: var(--green-score);">0</span>
-  </div>
-  <div class="list-row">
-    <div class="row-left"><span class="row-label">Passenger</span></div>
-    <span style="font-weight: 600; color: var(--green-score);">0</span>
-  </div>
-
-  <!-- View Full History -->
-  <div style="padding: 24px 16px;">
-    <a class="btn-secondary" href="#">View Full History</a>
-  </div>
-
+  <div class="notif-toast"><div class="notif-app">MYSUBARU</div><div class="notif-title"></div><div class="notif-body"></div></div>
 </div>
 <script src="../js/app.js"></script>
 </body>
