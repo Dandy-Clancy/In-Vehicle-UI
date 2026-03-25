@@ -1,0 +1,17 @@
+/* ===== Shared Template Snippets ===== */
+
+/* Status bar SVG icons (reused on every page) */
+const SB_ICONS=`<svg viewBox="0 0 17 12"><rect x="0" y="3" width="3" height="9" rx=".5" fill="currentColor" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx=".5" fill="currentColor" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx=".5" fill="currentColor" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx=".5" fill="currentColor"/></svg><svg viewBox="0 0 16 12"><path d="M8 2.4C5.6 2.4 3.4 3.4 1.8 5.1L0 3.3C2.1 1.2 4.9 0 8 0s5.9 1.2 8 3.3l-1.8 1.8C12.6 3.4 10.4 2.4 8 2.4z" fill="currentColor"/><path d="M8 6.8c-1.5 0-2.8.6-3.8 1.6L2.4 6.6C3.9 5.1 5.8 4.4 8 4.4s4.1.7 5.6 2.2l-1.8 1.8C10.8 7.4 9.5 6.8 8 6.8z" fill="currentColor"/><circle cx="8" cy="11" r="2" fill="currentColor"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="21" height="10" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><rect x="22" y="4" width="2" height="4" rx=".5" fill="currentColor" opacity=".4"/><rect x="1.5" y="2.5" width="18" height="7" rx="1" fill="currentColor"/></svg>`;
+
+/* Feature icons */
+const ICONS={
+  speed:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>`,
+  curfew:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l-3 3"/></svg>`,
+  boundary:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>`,
+  passenger:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>`,
+  volume:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>`,
+  fuel:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><path d="M3 22h12M5 22V6a2 2 0 012-2h4a2 2 0 012 2v16"/><path d="M13 10h2a2 2 0 012 2v3"/><circle cx="17" cy="17" r="2"/></svg>`,
+  report:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>`,
+  ledger:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>`,
+  settings:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3C3C43" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.26.46.4.97.4 1.5V12h1.09a2 2 0 010 4h-.09c-.53 0-1.04.14-1.5.4z"/></svg>`,
+};
