@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySubaru — MyFamily Account</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
+
+  <div class="nav-bar">
+    <button class="back-btn" onclick="goBack()">&#8249; Back</button>
+    <div class="nav-logo"><span class="logo-icon">(</span>MySubaru</div>
+    <button class="menu-btn" onclick="openMenu()">Menu</button>
+  </div>
+
+  <div class="context-banner">
+    <span>Keith Bryant</span>
+    <div class="info-icon">i</div>
+  </div>
+
+  <!-- MyFamily Account -->
+  <div class="section-header">MyFamily Account</div>
+  <a class="list-row" href="#">
+    <div class="row-left">
+      <div class="avatar">K</div>
+      <div>
+        <div class="row-label">Keith Bryant</div>
+        <div class="row-sublabel">Guardian Profile &middot; Primary</div>
+      </div>
+    </div>
+    <span class="chevron" style="color: var(--blue-primary); font-size: 20px;">&#8250;</span>
+  </a>
+
+  <!-- Teen Drivers -->
+  <div class="section-header">Teen Drivers</div>
+  <div class="card">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="avatar">K</div>
+        <div>
+          <div style="font-weight: 600; font-size: 17px;">Kevin Bryant</div>
+          <div style="font-size: 13px; color: var(--gray-500);">Teen Driver &middot; Age 16 &middot; High Trust</div>
+        </div>
+      </div>
+      <span class="badge-active">Active</span>
+    </div>
+
+    <!-- Stats -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;">
+      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
+        <div style="font-size: 24px; font-weight: 700; color: var(--green-score);">87</div>
+        <div style="font-size: 11px; color: var(--gray-500);">Weekly Score</div>
+      </div>
+      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
+        <div style="font-size: 24px; font-weight: 700; color: var(--green-score);">0</div>
+        <div style="font-size: 11px; color: var(--gray-500);">Alerts</div>
+      </div>
+      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
+        <div style="font-size: 24px; font-weight: 700;">5</div>
+        <div style="font-size: 11px; color: var(--gray-500);">Rules</div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border-top: 1px solid var(--gray-200); padding-top: 12px;">
+      <a href="reports.html" style="text-align: center; padding: 10px; color: var(--blue-primary); font-weight: 600; font-size: 15px; text-decoration: none;">&#128196; Reports</a>
+      <a href="active-settings.html" style="text-align: center; padding: 10px; color: var(--blue-primary); font-weight: 600; font-size: 15px; text-decoration: none;">&#9881; Settings</a>
+    </div>
+  </div>
+
+  <!-- Add Driver -->
+  <div class="section-header">Add Driver</div>
+  <a class="list-row" href="#">
+    <div class="row-left">
+      <div class="avatar" style="background: none; border: 2px dashed var(--gray-300); color: var(--gray-400); font-size: 20px;">+</div>
+      <span class="row-label" style="color: var(--gray-500);">Add Teen Driver Profile</span>
+    </div>
+  </a>
+
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>

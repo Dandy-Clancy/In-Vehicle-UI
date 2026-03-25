@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySubaru — Curfew Alerts</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
+
+  <div class="nav-bar">
+    <button class="back-btn" onclick="goBack()">&#8249;</button>
+    <span class="nav-title">Curfew Alerts</span>
+    <button class="menu-btn" onclick="openMenu()">Menu</button>
+  </div>
+
+  <div class="context-banner">
+    <span>Kevin Bryant &mdash; Teen Driver</span>
+    <div class="info-icon">i</div>
+  </div>
+
+  <h2 style="text-align: center; padding: 20px 16px 8px; font-size: 22px;">Curfew Alerts</h2>
+
+  <!-- Existing Curfews -->
+  <div class="list-row">
+    <div class="row-left">
+      <div style="width: 22px; height: 22px; border: 2px solid var(--gray-300); border-radius: 50%;"></div>
+      <span class="row-label">Demo Curfew</span>
+    </div>
+    <span style="font-size: 20px; color: var(--gray-400);">&#8943;</span>
+  </div>
+
+  <div class="list-row">
+    <div class="row-left">
+      <div style="width: 22px; height: 22px; background: var(--green-active); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">&#10003;</div>
+      <span class="row-label">Curfew Limiting</span>
+    </div>
+    <span style="font-size: 20px; color: var(--gray-400);">&#8943;</span>
+  </div>
+
+  <!-- Create New -->
+  <div style="padding: 16px;">
+    <a class="btn-primary" href="curfew-create.html">Create a New Curfew Alert</a>
+  </div>
+
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>
