@@ -2,84 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
   <title>MySubaru — MyFamily Account</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<div class="app-shell">
+<div class="frame">
 
-  <div class="status-bar"><span>9:41</span><span>&#9679;&#9679;&#9679; &#9681;</span></div>
-
-  <div class="nav-bar">
-    <button class="back-btn" onclick="goBack()">&#8249; Back</button>
-    <div class="nav-logo"><span class="logo-icon">(</span>MySubaru</div>
-    <button class="menu-btn" onclick="openMenu()">Menu</button>
+  <div class="sb">
+    <span class="t">9:41</span>
+    <span class="i"><svg viewBox="0 0 17 12"><rect x="0" y="3" width="3" height="9" rx=".5" fill="currentColor" opacity=".3"/><rect x="4.5" y="2" width="3" height="10" rx=".5" fill="currentColor" opacity=".5"/><rect x="9" y="1" width="3" height="11" rx=".5" fill="currentColor" opacity=".7"/><rect x="13.5" y="0" width="3" height="12" rx=".5" fill="currentColor"/></svg><svg viewBox="0 0 16 12"><path d="M8 2.4C5.6 2.4 3.4 3.4 1.8 5.1L0 3.3C2.1 1.2 4.9 0 8 0s5.9 1.2 8 3.3l-1.8 1.8C12.6 3.4 10.4 2.4 8 2.4z" fill="currentColor"/><circle cx="8" cy="11" r="2" fill="currentColor"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="21" height="10" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><rect x="22" y="4" width="2" height="4" rx=".5" fill="currentColor" opacity=".4"/><rect x="1.5" y="2.5" width="18" height="7" rx="1" fill="currentColor"/></svg></span>
   </div>
 
-  <div class="context-banner">
+  <div class="nb">
+    <button class="nb-back" onclick="back()"><span class="arr">&#8249;</span> Back</button>
+    <div class="nb-logo"><span class="p">((</span><span class="m">My</span><strong>Subaru</strong></div>
+    <button class="nb-menu" onclick="openMenu()">Menu</button>
+  </div>
+
+  <div class="cb">
     <span>Keith Bryant</span>
-    <div class="info-icon">i</div>
+    <div class="ii">i</div>
   </div>
 
-  <!-- MyFamily Account -->
-  <div class="section-header">MyFamily Account</div>
-  <a class="list-row" href="#">
-    <div class="row-left">
-      <div class="avatar">K</div>
-      <div>
-        <div class="row-label">Keith Bryant</div>
-        <div class="row-sublabel">Guardian Profile &middot; Primary</div>
-      </div>
-    </div>
-    <span class="chevron" style="color: var(--blue-primary); font-size: 20px;">&#8250;</span>
-  </a>
+  <div class="ct">
 
-  <!-- Teen Drivers -->
-  <div class="section-header">Teen Drivers</div>
-  <div class="card">
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="avatar">K</div>
-        <div>
-          <div style="font-weight: 600; font-size: 17px;">Kevin Bryant</div>
-          <div style="font-size: 13px; color: var(--gray-500);">Teen Driver &middot; Age 16 &middot; High Trust</div>
+    <div class="sh">MYFAMILY ACCOUNT</div>
+
+    <a class="rw" href="#">
+      <div class="rw-l">
+        <div class="av" style="width:40px;height:40px;font-size:16px;background:#1976D2">K</div>
+        <div style="margin-left:12px">
+          <span class="rw-lbl">Keith Bryant</span>
+          <span class="rw-sub">Guardian Profile &middot; Primary</span>
         </div>
       </div>
-      <span class="badge-active">Active</span>
+      <span class="chv chv-blue">&#8250;</span>
+    </a>
+
+    <div class="sh">TEEN DRIVERS</div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;padding:16px">
+        <div class="av" style="width:48px;height:48px;font-size:18px;background:#4CAF50">K</div>
+        <div style="margin-left:12px;flex:1">
+          <div style="font-weight:700;font-size:16px">Kevin Bryant</div>
+          <div style="font-size:13px;color:#888">Teen Driver &middot; Age 16 &middot; High Trust</div>
+        </div>
+        <span class="badge-active">Active</span>
+      </div>
+
+      <div class="stats stats-3" style="padding:0 16px 12px">
+        <div><span class="sv" style="color:var(--blue)">87</span><span class="sl">Weekly Score</span></div>
+        <div><span class="sv">0</span><span class="sl">Alerts</span></div>
+        <div><span class="sv">5</span><span class="sl">Rules</span></div>
+      </div>
+
+      <div style="display:flex;border-top:1px solid #eee">
+        <a href="reports/latest.html" style="flex:1;text-align:center;padding:12px;color:var(--blue);font-weight:600;font-size:14px;border-right:1px solid #eee">Reports</a>
+        <a href="active-settings.html" style="flex:1;text-align:center;padding:12px;color:var(--blue);font-weight:600;font-size:14px">Settings</a>
+      </div>
     </div>
 
-    <!-- Stats -->
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;">
-      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
-        <div style="font-size: 24px; font-weight: 700; color: var(--green-score);">87</div>
-        <div style="font-size: 11px; color: var(--gray-500);">Weekly Score</div>
-      </div>
-      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
-        <div style="font-size: 24px; font-weight: 700; color: var(--green-score);">0</div>
-        <div style="font-size: 11px; color: var(--gray-500);">Alerts</div>
-      </div>
-      <div style="text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px;">
-        <div style="font-size: 24px; font-weight: 700;">5</div>
-        <div style="font-size: 11px; color: var(--gray-500);">Rules</div>
-      </div>
-    </div>
+    <div class="sh">ADD DRIVER</div>
 
-    <!-- Actions -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border-top: 1px solid var(--gray-200); padding-top: 12px;">
-      <a href="reports.html" style="text-align: center; padding: 10px; color: var(--blue-primary); font-weight: 600; font-size: 15px; text-decoration: none;">&#128196; Reports</a>
-      <a href="active-settings.html" style="text-align: center; padding: 10px; color: var(--blue-primary); font-weight: 600; font-size: 15px; text-decoration: none;">&#9881; Settings</a>
-    </div>
+    <a class="rw" href="#">
+      <div class="rw-l">
+        <div style="width:40px;height:40px;border-radius:50%;border:2px dashed #1976D2;display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:24px">+</div>
+        <span class="rw-lbl" style="margin-left:12px;color:var(--blue)">Add Teen Driver Profile</span>
+      </div>
+    </a>
+
   </div>
-
-  <!-- Add Driver -->
-  <div class="section-header">Add Driver</div>
-  <a class="list-row" href="#">
-    <div class="row-left">
-      <div class="avatar" style="background: none; border: 2px dashed var(--gray-300); color: var(--gray-400); font-size: 20px;">+</div>
-      <span class="row-label" style="color: var(--gray-500);">Add Teen Driver Profile</span>
-    </div>
-  </a>
 
 </div>
 <script src="../js/app.js"></script>
